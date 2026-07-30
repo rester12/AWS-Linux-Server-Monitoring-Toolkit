@@ -1,0 +1,34 @@
+# Credentials and private keys
+*.pem
+*.key
+*.p12
+*.pfx
+.aws/
+credentials
+
+# Local configuration and environment files
+.env
+.env.*
+sys-health-monitor.conf
+*.local
+
+# Runtime output
+*.log
+*.state
+status.html
+tmp/
+
+# Infrastructure state and generated plans
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
