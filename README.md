@@ -8,6 +8,12 @@ The project uses state-transition alerting: it sends one notification when a che
 
 The monitoring was validated through controlled failure simulations involving a stopped service, high memory pressure, high disk usage, and an invalid Nginx configuration. This is a project-based training environment and is not presented as a production deployment.
 
+## Medium Article
+
+Read the complete project walkthrough, implementation details, troubleshooting notes, and lessons learned:
+
+[Building a Linux Server Health Monitoring and Troubleshooting Toolkit](https://medium.com/@rester.mcglown/building-a-linux-server-health-monitoring-and-troubleshooting-toolkit-726d1bb445ff)
+
 ## Architecture
 
 ```mermaid
