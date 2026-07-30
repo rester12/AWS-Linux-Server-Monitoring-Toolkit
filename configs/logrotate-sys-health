@@ -1,0 +1,11 @@
+/var/log/sys_health.log {
+    daily
+    rotate 7
+    compress
+    delaycompress
+    missingok
+    notifempty
+    su ubuntu syslog
+    create 0640 ubuntu syslog
+}
+

@@ -1,0 +1,13 @@
+[Unit]
+Description=Run the Linux server health monitor every five minutes
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=5min
+RandomizedDelaySec=15s
+Persistent=true
+Unit=sys-health-monitor.service
+
+[Install]
+WantedBy=timers.target
+

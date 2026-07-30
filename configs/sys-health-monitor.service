@@ -1,0 +1,19 @@
+[Unit]
+Description=Linux server health monitoring check
+After=network-online.target nginx.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=ubuntu
+Group=ubuntu
+EnvironmentFile=-/etc/sys-health-monitor.conf
+ExecStart=/usr/local/bin/sys-health-monitor
+SuccessExitStatus=1
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/var/log/sys_health.log /var/lib/sys-health-monitor /var/www/html
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+

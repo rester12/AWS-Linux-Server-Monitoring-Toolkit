@@ -1,0 +1,19 @@
+# Copy this file to /etc/sys-health-monitor.conf and review every value.
+# Do not commit a configuration containing a live SNS topic ARN or account ID.
+
+DISK_PATH="/"
+DISK_WARN_PERCENT="80"
+MEMORY_WARN_PERCENT="80"
+CPU_WARN_PERCENT="90"
+
+NGINX_SERVICE="nginx"
+SSH_SERVICE="ssh"
+NGINX_PORT="80"
+
+AWS_REGION="us-east-1"
+SNS_TOPIC_ARN=""
+
+LOG_FILE="/var/log/sys_health.log"
+STATE_DIR="/var/lib/sys-health-monitor"
+DASHBOARD_FILE="/var/www/html/status.html"
+
